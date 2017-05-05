@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box; }
 
+h2{
+  color: #fff;
+}
 body {
   padding: 0;
   margin: 0;
