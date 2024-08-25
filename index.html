@@ -4,43 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SWOBA Beekeepers</title>
-    <style>
-        /* Add your CSS styles here - you can customize the look and feel */
-        body {
-            font-family: sans-serif;
-        }
-
-        header {
-            background-color: #f0f0f0; /* Example color */
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            text-align: center; /* Center the navigation links */
-            border: 1px solid #333;
-            padding: 10px;
-        }
-
-        nav li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -48,29 +12,25 @@
         <img src="bee_logo.png" alt="SWOBA Logo" width="150"> 
         <h1>SouthWestern Ohio Beekeepers Association (SWOBA)</h1>
 
-        <nav>
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#meetings">MEETINGS</a></li>
-                <li><a href="#join">JOIN</a></li>
-                <li><a href="#swarm">SWARM REMOVAL</a></li>
-                <li><a href="#monthly-to-do">MONTHLY TO-DO ITEMS</a></li>
-                <li><a href="#beginners">BEGINNING BEEKEEPING</a></li>
-                <li><a href="#more">MORE</a></li>
-                <li><a href="shop.html">SHOP</a></li>
-            </ul>
-        </nav>
     </header>
 
 
 
     <main>
-        
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="meetings.html">MEETINGS</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="swarm.html">SWARM REMOVAL</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+            </ul>
+        </nav>
         <img src="bee_banner.png" alt="SWOBA Banner" width="100%">
         <h2>Beekeeping in the Tri-State Area</h2>
         <!-- Replace with your actual banner image -->
 
-        <section id="about">
+        <section id="about" class="dark-background">
             <h2>About SWOBA</h2>
             <p>The South Western Ohio Beekeepers Association is a non-profit organization. Our mission is to develop beekeeping interest and skill in beginners through veteran beekeepers.</p>
             <p>SWOBA is made up of beekeepers from Hamilton, Butler, Clermont, and Warren counties in Ohio and some from Indiana and Kentucky. We have some beekeepers with more than 50 years of experience.</p>
@@ -83,35 +43,32 @@
             <p>To order these books, please email Dr. Dewey M Caron: <a href="mailto:dmcaron@udel.edu">dmcaron@udel.edu</a></p>
         </section>
 
-        <section id="meetings">
+        <section id="meetings" class="dark-background">
             <h2>Scheduled Beekeeping Meetings</h2>
-            <p>Our meetings will be a combination of IN-PERSON and ONLINE Zoom meetings. SWOBA members will receive meeting invites as they come up. Please check the Meetings tab for the coming meetings.</p>
+            <p>Our meetings will be a combination of IN-PERSON and ONLINE Zoom meetings. SWOBA members will receive meeting invites as they come up. Please check the <a href="meetings.html">Meetings Tab</a> to register for the coming meetings.</p>
 
-            <h3>In-Person Meetings at Parky's Farm:</h3>
+            <h3>Next in-person meetings at Parky's Farm are:</h3>
             <ul>
-                <li>April 20, 2024 @ Noon</li>
-                <li>July 13, 2024 @ Noon</li>
                 <li>September 14, 2024 @ Noon</li>
             </ul>
 
-            <h3>Online Zoom Meetings:</h3>
+            <h3>Next Online Zoom Meetings are:</h3>
             <ul>
-                <li>February 25, 2024 @ 7:30 PM</li>
-                <li>March 31, 2024 @ 7:30 PM</li>
-                <li>April 28, 2024 @ 7:30 PM</li>
                 <li>August 25, 2024 @ 7:30 PM</li>
                 <li>September 29, 2024 @ 7:30 PM</li>
                 <li>October 30, 2024 @ 7:30 PM</li>
                 <li>November 17, 2024 @ 7:30 PM</li>
             </ul>
-            
-            <p>PLEASE CHECK OUR "MEETINGS" PAGE FOR MORE INFORMATION AND TO REGISTER</p>
-
-            <h3>2024 Annual Beekeepers School Sign Up</h3>
-            <p><a href="#">CLICK HERE</a></p> <p>Please email us at <a href="mailto:SWOBAbees@gmail.com">SWOBAbees@gmail.com</a> for help.</p>
         </section>
 
-        <section id="queens">
+        <section id="school-signup">
+            <h3>2024 Annual Beekeepers School Sign Up</h3>
+            <p>There are many reasons to learn beekeeping. From generating honey, and having a positive impact on the local ecosystem beekeeping is a fascinating hobby and valuable skill. If you want formal training then click the resources below: </p>
+            <p><a href="https://warren.osu.edu/news/southwestern-ohio-beekeeper-school-32324">CLICK HERE</a></p>
+            <p>Please email us at <a href="mailto:SWOBAbees@gmail.com">SWOBAbees@gmail.com</a> for help.</p>
+        </section>
+
+        <section id="queens" class="dark-background">
             <h2>Queens' Sources</h2>
             <ul>
                 <li>Randy Oliver - <a href="https://scientificbeekeeping.com/">Scientific Beekeeping</a></li>
@@ -122,7 +79,23 @@
 
         <section id="officers">
             <h2>SWOBA Officers</h2>
-            <!-- Add officer information here -->
+            <ul>
+                <li>
+                    <strong>President:</strong><br>
+                    Yaser Almusawy<br>
+                    Email: yaser.almusawy [at] gmail.com
+                </li>
+                <li>
+                    <strong>Membership:</strong><br>
+                    Robert G. Pessler<br>
+                    Phone: 513-471-9699 (leave message)
+                </li>
+                <li>
+                    <strong>Secretaries:</strong><br>
+                    Sandra Murphy<br>
+                    Jennie Russell
+                </li>
+            </ul>
         </section>
 
     </main>

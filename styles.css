@@ -1,0 +1,284 @@
+main {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px; /* Increased base font size */
+    line-height: 1.6; /* Improved line height for readability */
+    font-weight: 400; /* Regular for body text */
+    padding-left: 20px;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    border: none;
+}
+
+nav {
+    background-color: #000000; /* Black background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: var(--honey-text);
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--honey-light);
+    color: var(--honey-dark);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 1em; /* Slightly larger footer text */
+}
+
+/* Shop Page Specific Styles */
+.shop-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.1em; /* Larger text for shop items */
+}
+
+.shop-item img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Additional styles for better readability */
+p, ul, ol {
+    font-size: 1.1em; /* Larger text for paragraphs and lists */
+}
+
+a {
+    font-size: 1.1em; /* Larger text for links */
+}
+
+/* .dark-background {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 20px 0;
+} */
+
+/* .dark-background h2, .dark-background h3 {
+    color: white;
+}
+
+.dark-background a {
+    color: #ffff00; 
+    text-decoration: underline;
+}
+
+.dark-background a:hover {
+    color: #ff9900; 
+} */
+
+:root {
+    --honey-dark: #8B4513;  /* A deep, rich brown */
+    --honey-light: #FFA500; /* A warm orange */
+    --honey-text: #FFF8DC;  /* A light, creamy color for text */
+    --honey-link: #FFD700; /* A golden yellow for links */
+    --honey-hover: #FAFAD2; /* A light yellow for hover effects */
+}
+
+.dark-background {
+    background-color: var(--honey-dark);
+    color: var(--honey-text);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-background h2, .dark-background h3 {
+    color: var(--honey-light);
+    border-bottom: 2px solid var(--honey-light);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700; /* Bold for headings */
+}
+
+.dark-background a {
+    color: var(--honey-link);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dark-background a:hover {
+    color: var(--honey-hover);
+    text-decoration: underline;
+}
+
+.register-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--honey-light); /* Using the honey-light color from our palette */
+    color: var(--honey-dark); /* Dark text for contrast */
+    border: 2px solid var(--honey-dark);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.register-button:hover {
+    background-color: var(--honey-dark);
+    color: var(--honey-light);
+    transform: scale(1.05);
+}
+
+.register-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 165, 0, 0.5); /* Orange glow on focus */
+}
+
+
+.membership-form-button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 15px 20px;
+    background-color: var(--honey-light);
+    color: var(--honey-dark);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membership-form-button:hover {
+    background-color: var(--honey-dark);
+    color: var(--honey-light);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.warning {
+    color: red;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-comparison {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.bee-images, .yellow-jacket-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.bee-image, .yellow-jacket-image {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.bee-images p, .yellow-jacket-images p {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .bee-image, .yellow-jacket-image {
+        max-width: 90%;
+    }
+}
+
+.dark-background .insect-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: var(--honey-dark);
+    border-bottom: 2px solid var(--honey-light);
+    padding-bottom: 5px;
+}
+
+.swarm-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.swarm-image {
+    max-width: 45%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .swarm-image {
+        max-width: 90%;
+    }
+}
+
+.swarm-help-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
